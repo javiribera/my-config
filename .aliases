@@ -1,0 +1,15 @@
+# custom-made aliases
+
+alias install="sudo aptitude install"
+alias update="sudo aptitude update"
+alias upgrade="sudo aptitude upgrade"
+alias remove="sudo aptitude remove"
+alias purge="sudo aptitude remove --purge"
+alias search="aptitude search"
+alias show="aptitude show"
+
+
+alias ffmpeg="echo 'ALIAS OF AVCONV IN DEBIAN' && avconv"
+alias py="python"
+alias pingo="ping google.com"
+
