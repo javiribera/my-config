@@ -71,6 +71,6 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # custom aliases in .aliases file
-source .aliases
+source ~/.aliases
 
 export PATH="/home/javiribera/.anaconda3/bin:$PATH"
