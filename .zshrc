@@ -73,4 +73,4 @@ source $ZSH/oh-my-zsh.sh
 # custom aliases in .aliases file
 source ~/.aliases
 
-export PATH="/home/javiribera/.anaconda3/bin:$PATH"
+export PATH="$HOME/.anaconda3/bin:$PATH"
