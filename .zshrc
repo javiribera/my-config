@@ -74,3 +74,9 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 
 export PATH="$HOME/.anaconda3/bin:$PATH"
+
+# To make less colorful
+# In Debian, install source-highlight
+# Source: http://superuser.com/questions/71588/how-to-syntax-highlight-via-less
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
