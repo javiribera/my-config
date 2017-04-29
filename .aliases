@@ -13,3 +13,4 @@ alias ffmpeg="echo 'ALIAS OF AVCONV IN DEBIAN' && avconv"
 alias py="python"
 alias pingo="ping google.com"
 
+unalias gcp
