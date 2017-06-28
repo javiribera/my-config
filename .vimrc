@@ -4,8 +4,6 @@
 " sudo aptitude install exuberant-ctags
 " sudo update-alternatives --config vim
 " git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" Do this:
-" https://powerline.readthedocs.io/en/master/installation/linux.html#fonts-installation
 " Run this in VIM:
 " :PluginInstall
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
