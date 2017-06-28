@@ -1,12 +1,14 @@
 " To set this up, run the following after placing this file in ~/.vimrc
 " sudo aptitude remove vim-tiny
 " sudo aptitude install vim vim-nox-py2 vim-gnome-py2
+" sudo aptitude install exuberant-ctags
 " sudo update-alternatives --config vim
 " git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " Do this:
 " https://powerline.readthedocs.io/en/master/installation/linux.html#fonts-installation
 " Run this in VIM:
 " :PluginInstall
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible              " required
 filetype off                  " required
@@ -78,3 +80,10 @@ let g:airlinesymbols.paste = '?'
 let g:airlinesymbols.whitespace = '?'
 
 set clipboard=unnamed
+
+" https://github.com/szw/vim-tags
+Plugin 'szw/vim-tags'
+
+" https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim#2287449
+:set ignorecase
+:set smartcase
