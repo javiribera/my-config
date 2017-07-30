@@ -8,13 +8,12 @@ alias purge="sudo aptitude remove --purge"
 alias search="aptitude search"
 alias show="aptitude show"
 
+# gcp is a cp with progress bar
+unalias "gcp"
 
 alias ffmpeg="echo 'ALIAS OF AVCONV IN DEBIAN' && avconv"
 alias py="python"
 alias pingo="ping google.com"
-
-# gcp is a cp with progress bar
-unalias "gcp"
 
 alias t="tmux"
 alias v="vim"
@@ -22,3 +21,5 @@ alias v="vim"
 # Git aliases in addition to oh-my-zsh
 alias gshow="git show"
 
+alias op="gnome-open"
+alias nau="nautilus ."
