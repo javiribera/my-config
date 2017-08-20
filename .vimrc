@@ -85,3 +85,7 @@ Plugin 'szw/vim-tags'
 " https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim#2287449
 :set ignorecase
 :set smartcase
+
+" go to the definition of a tag
+nmap <C-g> <C-]>
+nmap <C-w>g <C-w>]
