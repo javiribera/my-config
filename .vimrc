@@ -89,3 +89,9 @@ Plugin 'szw/vim-tags'
 " go to the definition of a tag
 nmap <C-g> <C-]>
 nmap <C-w>g <C-w>]
+
+" https://github.com/davidhalter/jedi-vim
+Plugin 'davidhalter/jedi-vim'
+
+" insert breakpoint 
+nmap ipdb iimport ipdb; ipdb.set_trace()<CR><Esc>
