@@ -1,3 +1,9 @@
+# ==== INSTALL ====
+# Get the latest version of the zsh plugins as explained here:
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#in-your-zshrc
+# https://github.com/zsh-users/zsh-history-substring-search#install
+# =================
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -47,7 +53,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git dirhistory history python sudo)
+plugins=(git dirhistory history python sudo zsh-history-substring-search)
 # (https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)
 
 # User configuration
@@ -92,7 +98,8 @@ function zle-line-init zle-keymap-select {
     zle -N zle-keymap-select
 
 # https://github.com/zsh-users/zsh-history-substring-search
-source .zsh-history-substring-search.zsh
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-history-substring-search.zsh
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 bindkey -M vicmd '^[[A' history-substring-search-up
