@@ -95,3 +95,13 @@ Plugin 'davidhalter/jedi-vim'
 
 " insert breakpoint 
 nmap ipdb Oimport ipdb; ipdb.set_trace()<Esc>
+
+" https://github.com/907th/vim-auto-save
+Plugin '907th/vim-auto-save'
+let g:auto_save = 1
+let g:auto_save_presave_hook = 'call AbortIfNotPython()'
+function! AbortIfNotPython()
+if &filetype != 'python'
+      let g:auto_save_abort = 1
+	endif
+endfunction
