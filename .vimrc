@@ -94,4 +94,4 @@ nmap <C-w>g <C-w>]
 Plugin 'davidhalter/jedi-vim'
 
 " insert breakpoint 
-nmap ipdb iimport ipdb; ipdb.set_trace()<CR><Esc>
+nmap ipdb Oimport ipdb; ipdb.set_trace()<Esc>
