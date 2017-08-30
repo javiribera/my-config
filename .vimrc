@@ -1,8 +1,8 @@
 " To set this up, run the following after placing this file in ~/.vimrc
 " sudo aptitude remove vim-tiny
-" sudo aptitude install vim vim-nox-py2 vim-gnome-py2
-" sudo aptitude install exuberant-ctags
+" sudo aptitude install vim vim-nox-py2 vim-gnome-py2 exuberant-ctags vim-autopep8 python-autopep8
 " sudo update-alternatives --config vim
+" pip install --upgrade autopep8
 " git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " Run this in VIM:
 " :PluginInstall
@@ -105,3 +105,7 @@ if &filetype != 'python'
       let g:auto_save_abort = 1
 	endif
 endfunction
+
+" https://github.com/Chiel92/vim-autoformat
+Plugin 'Chiel92/vim-autoformat'
+
