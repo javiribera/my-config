@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # custom aliases in .aliases file
 source ~/.aliases
 
-export PATH="$HOME/anaconda3/bin:$PATH"
+export PATH="$HOME/.anaconda3/bin:$PATH"
 
 # To make less colorful
 # In Debian, install source-highlight
