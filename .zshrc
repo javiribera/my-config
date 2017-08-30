@@ -99,7 +99,7 @@ function zle-line-init zle-keymap-select {
 
 # https://github.com/zsh-users/zsh-history-substring-search
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh-history-substring-search.zsh
+source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 bindkey -M vicmd '^[[A' history-substring-search-up
