@@ -94,7 +94,7 @@ nmap <C-w>g <C-w>]
 Plugin 'davidhalter/jedi-vim'
 
 " insert breakpoint 
-nmap ipdb Oimport ipdb; ipdb.set_trace()<Esc>
+nmap ipy Oimport ipy; ipy.set_trace()<Esc>
 
 " https://github.com/907th/vim-auto-save
 Plugin '907th/vim-auto-save'
