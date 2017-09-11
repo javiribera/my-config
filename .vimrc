@@ -109,3 +109,6 @@ endfunction
 " https://github.com/Chiel92/vim-autoformat
 Plugin 'Chiel92/vim-autoformat'
 
+" https://github.com/Yggdroot/indentLine
+Plugin 'Yggdroot/indentLine'
+let g:indentLine_color_term = 238
