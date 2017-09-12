@@ -118,5 +118,13 @@ map <F7> :TagbarToggle<CR>
 let g:tagbar_width = 30
 let g:tagbar_compact = 1
 
+" https://github.com/rkulla/pydiction
+Plugin 'rkulla/pydiction'
+filetype plugin on
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+
+" https://github.com/scrooloose/nerdcommenter
+Plugin 'scrooloose/nerdcommenter' 
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
