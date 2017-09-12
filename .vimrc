@@ -24,8 +24,6 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Line number at the left
@@ -102,3 +100,23 @@ Plugin 'Chiel92/vim-autoformat'
 " https://github.com/Yggdroot/indentLine
 Plugin 'Yggdroot/indentLine'
 let g:indentLine_color_term = 238
+
+" NERD_tree config
+let NERDTreeChDirMode=2
+let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
+let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
+let NERDTreeShowBookmarks=1
+map <F3> :NERDTreeToggle<CR>
+
+" Syntax for multiple tag files are
+" set tags=/my/dir1/tags, /my/dir2/tags
+set tags=tags;$HOME/.vim/tags/
+
+" TagList Plugin Configuration
+Plugin 'majutsushi/tagbar'
+map <F7> :TagbarToggle<CR>
+let g:tagbar_width = 30
+let g:tagbar_compact = 1
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
