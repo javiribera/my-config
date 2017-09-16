@@ -23,3 +23,8 @@ alias gshow="git show"
 
 alias op="gnome-open"
 alias nau="nautilus ."
+
+unalias "ll"
+unalias "l"
+alias l="ls -l"
+alias ll="ls -la"
