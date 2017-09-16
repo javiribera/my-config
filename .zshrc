@@ -88,14 +88,14 @@ export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 
 # vimify zsh terminal
-bindkey -v
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-        RPS2=$RPS1
-	    zle reset-prompt
-    }
-    zle -N zle-line-init
-    zle -N zle-keymap-select
+#bindkey -v
+#function zle-line-init zle-keymap-select {
+#    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#        RPS2=$RPS1
+#            zle reset-prompt
+#    }
+#    zle -N zle-line-init
+#    zle -N zle-keymap-select
 
 # https://github.com/zsh-users/zsh-history-substring-search
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
