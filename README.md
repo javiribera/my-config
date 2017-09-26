@@ -3,7 +3,8 @@ My configuration files: zsh, vim, git, aliases
 
 ## Install
 
-1. Download anaconda and install it in ~/.anaconda3
+1. Download anaconda and install it in `~/.anaconda3/`:
+
 https://www.anaconda.com/download/#download
 
 2. Install zsh
