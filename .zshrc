@@ -1,15 +1,24 @@
-# ==== INSTALL ====
-# Get the latest version of the zsh plugins as explained here:
-# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#in-your-zshrc
-# https://github.com/zsh-users/zsh-history-substring-search#install
-# =================
+# Load the antigen plugin manager (https://github.com/zsh-users/antigen)
+source $HOME/.antigen.zsh
+
+antigen use oh-my-zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle git
+antigen theme bira
+antigen bundle dirhistory
+antigen bundle history
+antigen bundle python
+antigen bundle sudo
+antigen apply
+
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -61,8 +70,6 @@ plugins=(git dirhistory history python sudo zsh-history-substring-search)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -98,8 +105,6 @@ export LESS=' -R '
 #    zle -N zle-keymap-select
 
 # https://github.com/zsh-users/zsh-history-substring-search
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 bindkey -M vicmd '^[[A' history-substring-search-up
