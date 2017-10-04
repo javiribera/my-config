@@ -128,3 +128,8 @@ Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+" Make tabs 4 spaces
+" https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces#1878983
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
