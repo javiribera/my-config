@@ -28,3 +28,10 @@ unalias "ll"
 unalias "l"
 alias l="ls -l"
 alias ll="ls -la"
+
+# This is not really an alias because it appends some stuff at the end
+function ssh () {/usr/bin/ssh -t $@ "tmux attach -t loginbase || tmux new -s loginbase";}
+function tn () {TMUX=`tmux new-session -d -s $1` && tmux switch-client -t $1;}
+function ts () {tmux switch-client -t $1;}
+function tls () {echo 'tmux Sessions:'; tmux list-sessions;}
+function tk () {tmux kill-session -t $1;}
