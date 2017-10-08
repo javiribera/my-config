@@ -133,3 +133,6 @@ call vundle#end()            " required
 " https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces#1878983
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+" Use system's clipboard
+" https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard#11489440
+:set clipboard=unnamedplus
