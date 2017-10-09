@@ -99,3 +99,6 @@ bindkey '^[[B' history-substring-search-down
 
 # python debugging
 export PYTHONPATH=$PYTHONPATH:~/.my-config/python
+
+# Switch colon and semicolon
+xmodmap -e "keycode 47 = colon semicolon"
