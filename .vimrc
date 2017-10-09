@@ -114,7 +114,7 @@ set tags=tags;$HOME/.vim/tags/
 
 " TagList Plugin Configuration
 Plugin 'majutsushi/tagbar'
-map <F7> :TagbarToggle<CR>
+map <F4> :TagbarToggle<CR>
 let g:tagbar_width = 30
 let g:tagbar_compact = 1
 
