@@ -7,9 +7,9 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle git
 antigen theme bira
 antigen bundle dirhistory
-antigen bundle history
 antigen bundle python
 antigen bundle sudo
+antigen bundle posva/catimg
 antigen apply
 
 
