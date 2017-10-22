@@ -7,6 +7,7 @@ alias remove="sudo aptitude remove"
 alias purge="sudo aptitude remove --purge"
 alias search="aptitude search"
 alias show="aptitude show"
+alias up2="sudo aptitude update && sudo aptitude upgrade"
 
 # gcp is a cp with progress bar
 unalias "gcp"
@@ -29,6 +30,7 @@ unalias "ll"
 unalias "l"
 alias l="ls -l"
 alias ll="ls -la"
+alias h="fc -i -l 1"
 
 # This is not really an alias because it appends some stuff at the end
 function ssh () {/usr/bin/ssh -t $@ "tmux attach -t loginbase || tmux new -s loginbase";}
