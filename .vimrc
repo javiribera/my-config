@@ -97,6 +97,9 @@ endfunction
 " https://github.com/Chiel92/vim-autoformat
 Plugin 'Chiel92/vim-autoformat'
 
+" https://github.com/Vimjas/vim-python-pep8-indent
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 " https://github.com/Yggdroot/indentLine
 Plugin 'Yggdroot/indentLine'
 let g:indentLine_color_term = 238
@@ -136,3 +139,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Use system's clipboard
 " https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard#11489440
 :set clipboard=unnamedplus
+
+" https://superuser.com/questions/581572/insert-single-character-in-vim/581578
+nnoremap <C-i> i_<Esc>r
+nnoremap <C-a> a_<Esc>r
