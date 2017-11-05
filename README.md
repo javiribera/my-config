@@ -15,5 +15,5 @@ rm -Rf ~/.anaconda3 ~/.my-config ~/.zshrc ~/.aliases ~/.vimrc ~/.zsh-syntax-high
 
 4. Install misc stuff that requires sudo
 ```
-sudo aptitude install libsource-highlight-common source-highlight vim-gnome vim-nox-py2 vim-gnome-py2 exuberant-ctags vim-autopep8 python-autopep8 && sudo update-alternatives --config vim
+sudo aptitude install libsource-highlight-common source-highlight vim-gnome vim-nox-py2 vim-gnome-py2 exuberant-ctags vim-autopep8 python-autopep8 xclip && sudo update-alternatives --config vim
 ```
