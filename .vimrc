@@ -83,6 +83,8 @@ Plugin 'davidhalter/jedi-vim'
 
 " insert breakpoint 
 nmap ipy Oimport ipy; ipy.set_trace()<Esc>
+nmap bp Oimport ipdb; ipdb.set_trace()<Esc>
+
 
 " https://github.com/907th/vim-auto-save
 Plugin '907th/vim-auto-save'
@@ -128,6 +130,10 @@ let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 " https://github.com/scrooloose/nerdcommenter
 Plugin 'scrooloose/nerdcommenter' 
+
+" https://github.com/xolox/vim-notes
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
