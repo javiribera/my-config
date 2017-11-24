@@ -14,6 +14,7 @@ unalias "gcp"
 
 alias ffmpeg="echo 'ALIAS OF AVCONV IN DEBIAN' && avconv"
 alias py="python"
+alias ipy="ipython --pylab"
 alias pingo="ping google.com"
 
 alias t="tmux"
@@ -25,6 +26,7 @@ alias gshow="git show"
 
 alias op="xdg-open"
 alias nau="nautilus ."
+alias sa="source activate"
 
 unalias "ll"
 unalias "l"
