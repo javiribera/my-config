@@ -149,3 +149,6 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " https://superuser.com/questions/581572/insert-single-character-in-vim/581578
 nnoremap <C-i> i_<Esc>r
 nnoremap <C-a> a_<Esc>r
+
+" https://stackoverflow.com/questions/18948491/running-python-code-in-vim#18948530
+nnoremap <buffer> <F9> :exec '!ipython' shellescape(@%, 1)<cr>
