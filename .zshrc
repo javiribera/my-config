@@ -102,3 +102,7 @@ export PYTHONPATH=$PYTHONPATH:~/.my-config/python
 
 # Switch colon and semicolon
 xmodmap -e "keycode 47 = colon semicolon"
+
+# Force terminal to have 256 colors for imgcat
+export TERM=xterm-256color
+PATH=$PATH:~/.imgcat/bin
