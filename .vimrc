@@ -152,3 +152,6 @@ nnoremap <C-a> a_<Esc>r
 
 " https://stackoverflow.com/questions/18948491/running-python-code-in-vim#18948530
 nnoremap <buffer> <F9> :exec '!ipython' shellescape(@%, 1)<cr>
+
+" https://stackoverflow.com/questions/18160953/disable-latex-symbol-conversion-in-vim
+let g:tex_conceal = ""
