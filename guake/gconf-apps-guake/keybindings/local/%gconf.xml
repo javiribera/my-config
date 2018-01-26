@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="move_tab_right" mtime="1475687255" type="string">
+		<stringvalue>&lt;Alt&gt;o</stringvalue>
+	</entry>
+	<entry name="move_tab_left" mtime="1475687254" type="string">
+		<stringvalue>&lt;Alt&gt;p</stringvalue>
+	</entry>
+	<entry name="next_tab" mtime="1475687258" type="string">
+		<stringvalue>&lt;Alt&gt;2</stringvalue>
+	</entry>
+	<entry name="previous_tab" mtime="1475687257" type="string">
+		<stringvalue>&lt;Alt&gt;1</stringvalue>
+	</entry>
+</gconf>

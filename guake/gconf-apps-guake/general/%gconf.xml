@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="tab_ontop" mtime="1512104300" type="bool" value="true"/>
+	<entry name="use_vte_titles" mtime="1503288596" type="bool" value="true"/>
+	<entry name="window_height_f" mtime="1512104300" type="float" value="56.857100000000003"/>
+	<entry name="quick_open_enable" mtime="1512104300" type="bool" value="true"/>
+	<entry name="use_login_shell" mtime="1476043554" type="bool" value="false"/>
+	<entry name="startup_script" mtime="1476043661" type="string">
+		<stringvalue></stringvalue>
+	</entry>
+	<entry name="window_height" mtime="1512104300" type="int" value="56"/>
+	<entry name="open_tab_cwd" mtime="1512104300" type="bool" value="true"/>
+	<entry name="compat_delete" mtime="1512104300" type="string">
+		<stringvalue>delete-sequence</stringvalue>
+	</entry>
+	<entry name="compat_backspace" mtime="1512104300" type="string">
+		<stringvalue>ascii-delete</stringvalue>
+	</entry>
+	<entry name="use_palette_font_and_background_color" mtime="1512104300" type="bool" value="true"/>
+	<entry name="use_default_font" mtime="1512104300" type="bool" value="true"/>
+	<entry name="scroll_keystroke" mtime="1512104300" type="bool" value="true"/>
+	<entry name="history_size" mtime="1512104300" type="int" value="1024"/>
+	<entry name="use_scrollbar" mtime="1512104300" type="bool" value="true"/>
+	<entry name="mouse_display" mtime="1496974810" type="bool" value="false"/>
+	<entry name="display_n" mtime="1512104300" type="int" value="0"/>
+	<entry name="quick_open_command_line" mtime="1512104300" type="string">
+		<stringvalue>gnome-open %(file_path)s</stringvalue>
+	</entry>
+	<entry name="window_tabbar" mtime="1512104300" type="bool" value="true"/>
+	<entry name="window_halignment" mtime="1512104300" type="int" value="0"/>
+	<entry name="window_width_f" mtime="1512104300" type="float" value="100"/>
+	<entry name="window_width" mtime="1512104300" type="int" value="100"/>
+	<entry name="window_losefocus" mtime="1512104300" type="bool" value="false"/>
+	<entry name="prompt_on_close_tab" mtime="1512104300" type="int" value="0"/>
+	<entry name="prompt_on_quit" mtime="1512104300" type="bool" value="true"/>
+	<entry name="use_popup" mtime="1475679896" type="bool" value="false"/>
+	<entry name="use_trayicon" mtime="1475679898" type="bool" value="false"/>
+</gconf>
