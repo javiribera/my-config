@@ -50,7 +50,7 @@ set laststatus=2
 " http://vim.wikia.com/wiki/256_colors_in_vim
 set t_Co=256
 if !exists('g:airlinesymbols')
-	let g:airlinesymbols = {}
+let g:airlinesymbols = {}
 endif
 let g:airlineleftsep = '»'
 let g:airlineleftsep = '?'
@@ -64,6 +64,13 @@ let g:airlinesymbols.paste = '?'
 let g:airlinesymbols.paste = 'Þ'
 let g:airlinesymbols.paste = '?'
 let g:airlinesymbols.whitespace = '?'
+
+" https://github.com/drzel/vim-line-no-indicator
+Plugin 'drzel/vim-line-no-indicator'
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{LineNoIndicator()}
+let g:airline_section_x = '%{&filetype}'
+let g:airline_section_y = '%#__accent_bold#%{LineNoIndicator()}%#__restore__#'
+let g:airline_section_z = '%2c'
 
 set clipboard=unnamed
 
@@ -81,7 +88,7 @@ nmap <C-w>g <C-w>]
 " https://github.com/davidhalter/jedi-vim
 Plugin 'davidhalter/jedi-vim'
 
-" insert breakpoint 
+" insert breakpoint
 nmap ipy Oimport ipy; ipy.set_trace()<Esc>
 nmap bp Oimport ipdb; ipdb.set_trace()<Esc>
 
@@ -93,7 +100,7 @@ let g:auto_save_presave_hook = 'call AbortIfNotPython()'
 function! AbortIfNotPython()
 if &filetype != 'python'
       let g:auto_save_abort = 1
-	endif
+endif
 endfunction
 
 " https://github.com/Chiel92/vim-autoformat
@@ -129,7 +136,7 @@ filetype plugin on
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 " https://github.com/scrooloose/nerdcommenter
-Plugin 'scrooloose/nerdcommenter' 
+Plugin 'scrooloose/nerdcommenter'
 
 " https://github.com/xolox/vim-notes
 Plugin 'xolox/vim-misc'
@@ -155,3 +162,9 @@ nnoremap <buffer> <F9> :exec '!ipython' shellescape(@%, 1)<cr>
 
 " https://stackoverflow.com/questions/18160953/disable-latex-symbol-conversion-in-vim
 let g:tex_conceal = ""
+
+" Move through tabs
+nnoremap <S-t> :tabnew<CR>
+nnoremap <S-h> :tabprev<CR>
+nnoremap <S-l> :tabnext<CR>
+nnoremap <S-w> :tabclose<CR>
