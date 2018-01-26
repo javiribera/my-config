@@ -106,3 +106,16 @@ xmodmap -e "keycode 47 = colon semicolon"
 # Force terminal to have 256 colors for imgcat
 export TERM=xterm-256color
 PATH=$PATH:~/.imgcat/bin
+
+# open TMUX
+# https://wiki.archlinux.org/index.php/Tmux#Start_tmux_on_every_shell_login
+if which tmux >/dev/null 2>&1; then
+    # if no session is started, start a new session
+    test -z ${TMUX} && tmux
+
+    # when quitting tmux, dont go back to standard zsh
+    while test -z ${TMUX}; do
+        exit
+    done
+fi
+
