@@ -1,5 +1,4 @@
 # custom-made aliases
-
 alias install="sudo aptitude install"
 alias update="sudo aptitude update"
 alias upgrade="sudo aptitude upgrade"
@@ -12,7 +11,6 @@ alias up2="sudo aptitude update && sudo aptitude upgrade"
 # gcp is a cp with progress bar
 unalias "gcp"
 
-alias ffmpeg="echo 'ALIAS OF AVCONV IN DEBIAN' && avconv"
 alias py="python"
 alias ipy="ipython --pylab"
 alias pingo="ping google.com"
@@ -83,4 +81,4 @@ alias cbssh="cbf ~/.ssh/id_rsa.pub"
 # Copy current working directory
 alias cbwd="pwd | cb"
 # Copy most recent command in bash history
-alias cbhs="cat $HISTFILE | tail -n 1 | cb"
+alias cbh="cat $HISTFILE | tail -n 1 | cb"
