@@ -168,3 +168,6 @@ nnoremap <S-t> :tabnew<CR>
 nnoremap <S-h> :tabprev<CR>
 nnoremap <S-l> :tabnext<CR>
 nnoremap <S-w> :tabclose<CR>
+
+" https://github.com/heavenshell/vim-pydocstring
+Plugin 'heavenshell/vim-pydocstring'
