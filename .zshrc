@@ -107,15 +107,16 @@ xmodmap -e "keycode 47 = colon semicolon"
 export TERM=xterm-256color
 PATH=$PATH:~/.imgcat/bin
 
-# open TMUX
-# https://wiki.archlinux.org/index.php/Tmux#Start_tmux_on_every_shell_login
-if which tmux >/dev/null 2>&1; then
-    # if no session is started, start a new session
-    test -z ${TMUX} && tmux
+## open TMUX
+# Disabled because this generates problem with nested (local+remote) tmuxes
+## https://wiki.archlinux.org/index.php/Tmux#Start_tmux_on_every_shell_login
+#if which tmux >/dev/null 2>&1; then
+#    # if no session is started, start a new session
+#    test -z ${TMUX} && tmux
 
-    # when quitting tmux, dont go back to standard zsh
-    while test -z ${TMUX}; do
-        exit
-    done
-fi
+#    # when quitting tmux, dont go back to standard zsh
+#    while test -z ${TMUX}; do
+#        exit
+#    done
+#fi
 
