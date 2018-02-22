@@ -1,49 +1,26 @@
-" To set this up, run the following after placing this file in ~/.vimrc
-" sudo aptitude remove vim-tiny
-" sudo aptitude install vim vim-nox-py2 vim-gnome-py2 exuberant-ctags vim-autopep8 python-autopep8
-" sudo update-alternatives --config vim
-" pip install --upgrade autopep8
-" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" Run this in VIM:
+" To install the Vundle plugins, run
 " :PluginInstall
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible              " required
+set nocompatible              " disable backward compatibility with ol' vi
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-
-
+" ----------------------------------------------
 filetype plugin indent on    " required
-
-" Line number at the left
-set number
-:highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-
-"split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-set encoding=utf-8
 
 " File browsing tree
 Plugin 'scrooloose/nerdtree'
 
 " Airline at the top
 Plugin 'vim-airline/vim-airline'
-
 " https://github.com/vim-airline/vim-airline/wiki/FAQ
 set laststatus=2
 
@@ -72,8 +49,6 @@ let g:airline_section_x = '%{&filetype}'
 let g:airline_section_y = '%#__accent_bold#%{LineNoIndicator()}%#__restore__#'
 let g:airline_section_z = '%2c'
 
-set clipboard=unnamed
-
 " https://github.com/szw/vim-tags
 Plugin 'szw/vim-tags'
 
@@ -81,17 +56,9 @@ Plugin 'szw/vim-tags'
 :set ignorecase
 :set smartcase
 
-" go to the definition of a tag
-nmap <C-g> <C-]>
-nmap <C-w>g <C-w>]
-
 " https://github.com/davidhalter/jedi-vim
 Plugin 'davidhalter/jedi-vim'
-
-" insert breakpoint
-nmap ipy Oimport ipy; ipy.set_trace()<Esc>
-nmap bp Oimport ipdb; ipdb.set_trace()<Esc>
-
+let g:jedi#completeopt = 'menu'
 
 " https://github.com/907th/vim-auto-save
 Plugin '907th/vim-auto-save'
@@ -135,15 +102,53 @@ Plugin 'rkulla/pydiction'
 filetype plugin on
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
-" https://github.com/scrooloose/nerdcommenter
-Plugin 'scrooloose/nerdcommenter'
+"" https://github.com/scrooloose/nerdcommenter
+"Plugin 'scrooloose/nerdcommenter'
 
 " https://github.com/xolox/vim-notes
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 
-" All of your Plugins must be added before the following line
+" https://github.com/heavenshell/vim-pydocstring
+Plugin 'heavenshell/vim-pydocstring'
+
+
+
+
+
+
+" All your Plugins must be added before the following line
 call vundle#end()            " required
+
+" ------------------------------------------
+" BELOW things not related with any plugin
+
+" Line number at the left
+set number
+:highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set encoding=utf-8
+set clipboard=unnamed
+
+" go to the definition of a tag
+nmap <C-g> <C-]>
+nmap <C-w>g <C-w>]
+
+" insert breakpoint
+nmap ipy Oimport ipy; ipy.set_trace()<Esc>
+nmap bp Oimport ipdb; ipdb.set_trace()<Esc>
+
+" Move through tabs
+nnoremap <S-t> :tabnew<CR>
+nnoremap <S-h> :tabprev<CR>
+nnoremap <S-l> :tabnext<CR>
+nnoremap <S-w> :tabclose<CR>
 
 " Make tabs 4 spaces
 " https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces#1878983
@@ -158,16 +163,7 @@ nnoremap <C-i> i_<Esc>r
 nnoremap <C-a> a_<Esc>r
 
 " https://stackoverflow.com/questions/18948491/running-python-code-in-vim#18948530
-nnoremap <buffer> <F9> :exec '!ipython' shellescape(@%, 1)<cr>
+nnoremap <buffer> <F9> :w<CR>:exec '!ipython' shellescape(@%, 1)<cr>
 
 " https://stackoverflow.com/questions/18160953/disable-latex-symbol-conversion-in-vim
 let g:tex_conceal = ""
-
-" Move through tabs
-nnoremap <S-t> :tabnew<CR>
-nnoremap <S-h> :tabprev<CR>
-nnoremap <S-l> :tabnext<CR>
-nnoremap <S-w> :tabclose<CR>
-
-" https://github.com/heavenshell/vim-pydocstring
-Plugin 'heavenshell/vim-pydocstring'
