@@ -82,3 +82,8 @@ alias cbssh="cbf ~/.ssh/id_rsa.pub"
 alias cbwd="pwd | cb"
 # Copy most recent command in bash history
 alias cbh="cat $HISTFILE | tail -n 1 | cb"
+# Copy real absolute path of a file
+function cbpath() { realpath "$1" | cb; }
+
+
+function mkdircd(){ mkdir -p $1 && cd $1 ; }
