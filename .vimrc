@@ -103,7 +103,7 @@ filetype plugin on
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 "" https://github.com/scrooloose/nerdcommenter
-"Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
 " https://github.com/xolox/vim-notes
 Plugin 'xolox/vim-misc'
@@ -111,6 +111,7 @@ Plugin 'xolox/vim-notes'
 
 " https://github.com/heavenshell/vim-pydocstring
 Plugin 'heavenshell/vim-pydocstring'
+nmap <leader>doc <Plug>(pydocstring)
 
 
 
@@ -128,10 +129,10 @@ set number
 :highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 "split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+map <C-j> <C-W><C-J>
+map <C-k> <C-W><C-K>
+map <C-l> <C-W><C-L>
+map <C-h> <C-W><C-H>
 
 set encoding=utf-8
 set clipboard=unnamed
