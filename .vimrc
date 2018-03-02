@@ -11,6 +11,9 @@
 set nocompatible              " required
 filetype off                  " required
 
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -130,10 +133,10 @@ map <F4> :TagbarToggle<CR>
 let g:tagbar_width = 30
 let g:tagbar_compact = 1
 
-" https://github.com/rkulla/pydiction
-Plugin 'rkulla/pydiction'
-filetype plugin on
-let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+"" https://github.com/rkulla/pydiction
+"Plugin 'rkulla/pydiction'
+"filetype plugin on
+"let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 " https://github.com/scrooloose/nerdcommenter
 Plugin 'scrooloose/nerdcommenter'
@@ -141,6 +144,21 @@ Plugin 'scrooloose/nerdcommenter'
 " https://github.com/xolox/vim-notes
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
+
+" https://github.com/heavenshell/vim-pydocstring
+Plugin 'heavenshell/vim-pydocstring'
+
+" https://github.com/davidbeckingsale/writegood.vim
+Plugin 'davidbeckingsale/writegood.vim'
+
+" https://github.com/reedes/vim-wordy
+Plugin 'reedes/vim-wordy'
+
+" https://github.com/rhysd/vim-grammarous
+Plugin 'rhysd/vim-grammarous'
+
+" https://github.com/dbmrq/vim-ditto
+Plugin 'dbmrq/vim-ditto'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -169,5 +187,7 @@ nnoremap <S-h> :tabprev<CR>
 nnoremap <S-l> :tabnext<CR>
 nnoremap <S-w> :tabclose<CR>
 
-" https://github.com/heavenshell/vim-pydocstring
-Plugin 'heavenshell/vim-pydocstring'
+" (Ditto) Use autocmds to check your text automatically and keep the highlighting
+" up to date (easier):
+au FileType markdown,text,tex DittoOn  " Turn on Ditto's autocmds
+nmap <leader>di <Plug>ToggleDitto      " Turn Ditto on and off
