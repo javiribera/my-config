@@ -90,10 +90,11 @@ nmap <C-w>g <C-w>]
 
 " https://github.com/davidhalter/jedi-vim
 Plugin 'davidhalter/jedi-vim'
-
+let g:jedi#usages_command = "<leader>z"
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
 " insert breakpoint
-nmap ipy Oimport ipy; ipy.set_trace()<Esc>
-nmap bp Oimport ipdb; ipdb.set_trace()<Esc>
+map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
 " https://github.com/907th/vim-auto-save
@@ -191,3 +192,9 @@ nnoremap <S-w> :tabclose<CR>
 " up to date (easier):
 au FileType markdown,text,tex DittoOn  " Turn on Ditto's autocmds
 nmap <leader>di <Plug>ToggleDitto      " Turn Ditto on and off
+
+" easier moving of code blocks
+" Try to go into visual mode (v), thenselect several lines of code here and
+" then press ``>`` several times.
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
