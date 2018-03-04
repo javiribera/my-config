@@ -69,7 +69,7 @@ COMPLETION_WAITING_DOTS="true"
 # fi
 
 # custom aliases in .aliases file
-source ~/.aliases
+source ~/.my-config/.aliases
 
 export PATH="$HOME/.anaconda3/bin:$PATH"
 
