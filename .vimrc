@@ -118,6 +118,7 @@ Plugin 'xolox/vim-notes'
 
 " https://github.com/heavenshell/vim-pydocstring
 Plugin 'heavenshell/vim-pydocstring'
+nmap <leader>doc <Plug>(pydocstring)
 
 " https://github.com/davidbeckingsale/writegood.vim
 Plugin 'davidbeckingsale/writegood.vim'
