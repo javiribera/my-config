@@ -132,6 +132,11 @@ Plugin 'rhysd/vim-grammarous'
 " https://github.com/dbmrq/vim-ditto
 Plugin 'dbmrq/vim-ditto'
 
+" https://github.com/dhruvasagar/vim-prosession
+" https://github.com/tpope/vim-obsession
+Plugin 'tpope/vim-obsession'
+Plugin 'dhruvasagar/vim-prosession'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
