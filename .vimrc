@@ -196,8 +196,10 @@ nnoremap <S-w> :tabclose<CR>
 
 " (Ditto) Use autocmds to check your text automatically and keep the highlighting
 " up to date (easier):
-au FileType markdown,text,tex DittoOn  " Turn on Ditto's autocmds
-nmap <leader>di <Plug>ToggleDitto      " Turn Ditto on and off
+"au FileType markdown,text,tex DittoOn  " Turn on Ditto's autocmds
+nmap <leader>d <Plug>ToggleDitto      " Turn Ditto on and off
+nmap <leader>dg <Plug>DittoGood                " Ignore the word under the cursor
+nmap <leader>db <Plug>DittoBad                 " Stop ignoring the word under the cursor
 
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
