@@ -70,9 +70,9 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 " https://github.com/907th/vim-auto-save
 Plugin '907th/vim-auto-save'
 let g:auto_save = 1
-let g:auto_save_presave_hook = 'call AbortIfNotPython()'
-function! AbortIfNotPython()
-if &filetype != 'python'
+let g:auto_save_presave_hook = 'call AbortIfNotPythonOrTeX()'
+function! AbortIfNotPythonOrTeX()
+if &filetype != 'python' && &filetype != 'tex'
       let g:auto_save_abort = 1
 endif
 endfunction
