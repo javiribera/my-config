@@ -21,6 +21,9 @@ alias e="vim"
 
 # Git aliases in addition to oh-my-zsh
 alias gshow="git show"
+alias gdiff="git diff"
+alias gdiffc="git diff --cached"
+alias gdc="git diff --cached"
 
 alias op="xdg-open"
 alias nau="nautilus ."
