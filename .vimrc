@@ -211,3 +211,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Do not save temporal (.swp) files in the same directory
 set noswapfile
+
+" https://superuser.com/questions/127431/how-to-remap-a-nerdtree-shortcut-in-vim/197977
+let NERDTreeMapActivateNode='<Space>'
+
+" https://stackoverflow.com/questions/15110843/map-space-key-to-go-into-insert-mode
+nnoremap <Space> i
