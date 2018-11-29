@@ -35,6 +35,8 @@ alias l="ls -l"
 alias ll="ls -la"
 alias h="fc -i -l 1"
 
+alias freecache="sudo bash -c 'echo Before: && free -h && swapoff -a && sync && echo 2 > /proc/sys/vm/drop_caches && swapon -a && echo && echo After: && free -h'"
+
 # This is not really an alias because it appends some stuff at the end
 function ssh () {/usr/bin/ssh -t $@ "tmux attach -t loginbase || tmux new -s loginbase";}
 function tn () {TMUX=`tmux new-session -d -s $1` && tmux switch-client -t $1;}
