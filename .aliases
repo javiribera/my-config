@@ -18,6 +18,7 @@ alias pingo="ping google.com"
 alias t="tmux"
 alias v="vim"
 alias e="vim"
+alias mk="make"
 
 # Git aliases in addition to oh-my-zsh
 alias gshow="git show"
