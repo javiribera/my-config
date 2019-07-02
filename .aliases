@@ -13,6 +13,7 @@ unalias "gcp"
 
 alias py="python"
 alias ipy="ipython --pylab"
+alias pyd="python -m ipdb -c"
 alias pingo="ping google.com"
 
 alias t="tmux"
