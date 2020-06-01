@@ -5,7 +5,7 @@ My configuration files: zsh, vim, git, aliases
 
 1. Install required packages from repos
 ```
-sudo aptitude install zsh curl git
+sudo aptitude install zsh curl git vim tmux
 ```
 
 
