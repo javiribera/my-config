@@ -3,10 +3,13 @@ My configuration files: zsh, vim, git, aliases
 
 ## Install
 
-1. Install zsh
+1. Install required packages from repos
 ```
-sudo aptitude install zsh
+sudo aptitude install zsh curl git
 ```
+
+
+2. Open a zsh shell
 
 3. Install the config from this repo. WARNING: This removes anaconda and the current config.
 ```
