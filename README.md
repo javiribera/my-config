@@ -5,7 +5,7 @@ My configuration files: zsh, vim, git, aliases
 
 1. Install required packages from repos
 ```
-sudo apt-get update && sudo apt-get install zsh curl git vim tmux libsource-highlight-common source-highlight exuberant-ctags python-autopep8 xclip python3-pip && sudo update-alternatives --config vim
+sudo apt-get update && sudo apt-get install zsh curl git vim tmux libsource-highlight-common source-highlight exuberant-ctags python3-autopep8 xclip python3-pip && sudo update-alternatives --config vim
 ```
 
 
