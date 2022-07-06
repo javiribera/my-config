@@ -93,3 +93,5 @@ alias cbh="cat $HISTFILE | tail -n 1 | cb"
 function cbpath() { realpath "$1" | cb; }
 
 function mkdircd(){ mkdir -p $1 && cd $1 ; }
+
+function jl(){ jq < $1 | less ; }
