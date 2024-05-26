@@ -14,7 +14,7 @@ sudo apt-get update && sudo apt-get install zsh curl git vim tmux libsource-high
 ```
 
 
-2. Open a zsh shell
+2. Open a `zsh` shell
 
 3. Install the config from this repo. WARNING: This removes anaconda and the current config.
 ```
