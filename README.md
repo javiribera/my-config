@@ -1,5 +1,10 @@
 # my-config
-My configuration files: zsh, vim, git, aliases
+Configuration files tuned to my need: zsh, vim, git, aliases
+
+## Compatible OS
+Tested in:
+- Ubuntu 24.04
+- Debian 12
 
 ## Install
 
